@@ -1,3 +1,32 @@
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+body {
+    font-family: Poppins;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 450;
+}
+p {
+    font-size: 1rem;
+}
+
+
+@layer base {
+    button {
+        @apply bg-red-500 text-white px-4 py-2 rounded;
+    }
+}
